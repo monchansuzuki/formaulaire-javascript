@@ -44,3 +44,12 @@ for (let i = 0; i < nationality.length; i++) {
         console.log('you have choice the nationality of :'+e.target.value);
     })
 }
+
+/*Cancel submit with preventDefault*/
+
+let form = document.querySelector("form");
+
+form.addEventListener('submit',function (ev) {
+    console.log('you have try to send the form');
+    ev.preventDefault();
+})
